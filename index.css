@@ -1,7 +1,5 @@
-.container {
-  display: flex;
-  justify-content: center;
-}
-.center {
-  width: 800px;
+div {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
 }
