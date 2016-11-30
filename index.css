@@ -1,11 +1,7 @@
-#world {
-    position: absolute;
-    margin: auto;
-    top:0;
-    bottom: :0;
-    right: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 1px;
+.container {
+  display: flex;
+  justify-content: center;
+}
+.center {
+  width: 800px;
 }
