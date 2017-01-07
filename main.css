@@ -16,7 +16,7 @@ div {
 
 #banner h1 a:link,
 #banner h1 a:visited {
-    color: #000305;
+    color: black;
     display: block;
     font-weight: bold;
     margin: 0 0 .6em .2em;
@@ -27,7 +27,7 @@ div {
 #banner h1 a:hover,
 #banner h1 a:active {
     background: none;
-    color: #C74350;
+    color: black;
     text-shadow: none;
 }
 
@@ -37,14 +37,13 @@ div {
 }
 
 #banner nav {
-    background: #000305;
     font-size: 1.143em;
     height: 40px;
     line-height: 30px;
     margin: 0 auto 2em auto;
     padding: 0;
     text-align: center;
-    width: 400px;
+    width: 800px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -53,7 +52,7 @@ div {
 #banner nav ul {
     list-style: none;
     margin: 0 auto;
-    width: 800px;
+    width: 600px;
 }
 
 #banner nav li {
@@ -64,19 +63,19 @@ div {
 
 #banner nav a:link,
 #banner nav a:visited {
-    color: #fff;
+    color: black;
+    text-decoration: none;
     display: inline-block;
     height: 30px;
     padding: 5px 1.5em;
-    text-decoration: none;
 }
 
 #banner nav a:hover,
 #banner nav a:actvie,
 #banner nav .active a:link,
 #banner nav .active a:visited {
-    background: #C74451;
-    color: #fff;
+    color: black;
+    text-decoration: underline;
     text-shadow: none !important;
 }
 
