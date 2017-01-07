@@ -16,7 +16,7 @@ div {
 
 #banner h1 a:link,
 #banner h1 a:visited {
-    color: black;
+    color: #131A1C;
     display: block;
     font-weight: bold;
     margin: 0 0 .6em .2em;
@@ -26,8 +26,6 @@ div {
 
 #banner h1 a:hover,
 #banner h1 a:active {
-    background: none;
-    color: black;
     text-shadow: none;
 }
 
@@ -44,7 +42,7 @@ div {
     padding: 0;
     text-align: center;
     width: 800px;
-    border: 1px solid black;
+    border: 1px solid #131A1C;
     border-left: none;
     border-right: none;
 }
@@ -63,20 +61,16 @@ div {
 
 #banner nav a:link,
 #banner nav a:visited {
-    color: black;
+    color: #131A1C;
     text-decoration: none;
     display: inline-block;
     height: 30px;
     padding: 5px 1.5em;
 }
-
-#banner nav a:hover,
-#banner nav a:actvie,
-#banner nav .active a:link,
-#banner nav .active a:visited {
-    color: black;
-    text-decoration: underline;
-    text-shadow: none !important;
+#banner nav a:hover {
+	background: #131A1C;
+    color: white;
+    border-radius: 5px;
 }
 
 #banner nav li:first-child a {
