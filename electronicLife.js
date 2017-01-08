@@ -461,4 +461,4 @@ var valley = new LifelikeWorld(
     }
 );
 
-animateWorld(valley)
+animateWorld(valley);
