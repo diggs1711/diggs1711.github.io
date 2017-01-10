@@ -83,6 +83,10 @@ div {
     -webkit-border-bottom-left-radius: 5px;
 }
 
+ul {
+    margin-left: 50px;
+}
+
 body {
     clear: both;
     margin: 0 auto;
