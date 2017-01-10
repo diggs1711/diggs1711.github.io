@@ -67,8 +67,9 @@ div {
     height: 30px;
     padding: 5px 1.5em;
 }
+
 #banner nav a:hover {
-	background: #131A1C;
+    background: #131A1C;
     color: white;
     border-radius: 5px;
 }
