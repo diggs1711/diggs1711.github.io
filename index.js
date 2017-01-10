@@ -18,8 +18,6 @@
 		home = displayDiv[0].innerHTML;
 		aboutText = document.createTextNode("I am recent BEng in Electronic and Engineering graduate currently working as a Technology Consultant.");
 
-		console.log(world)
-
 		tabs[0].addEventListener('click', function(e) {
 			if(e.target.innerText === "About"){
 				world[0].style.visibility = "hidden";
