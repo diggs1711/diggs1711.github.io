@@ -51,6 +51,7 @@ div {
     list-style: none;
     margin: 0 auto;
     width: 600px;
+    margin-left: 50px;
 }
 
 #banner nav li {
@@ -81,10 +82,6 @@ div {
     border-bottom-left-radius: 5px;
     -moz-border-radius-bottomleft: 5px;
     -webkit-border-bottom-left-radius: 5px;
-}
-
-ul {
-    margin-left: 50px;
 }
 
 body {
