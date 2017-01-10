@@ -27,11 +27,7 @@ calcLay[0].addEventListener('click', function(e) {
 	layStake = calculateLayStake(backReturn, layOdds, layCommission);
 	layRisk = calculateLayRisk(layStake, layOdds);
 
-	alert(layStake);
-	alert(layRisk);
-	document.getElementsByClassName('lay-stake')[0].innerHTML = "Lay stake is " + layStake;
-	console.log(calculateLayProfit());
-	console.log(calculateBackProfit());
+	document.getElementsByClassName('lay-stake')[0].innerHTML = "Lay Stake is " + layStake;
 })
 
 function calculateBackReturn(stk, bOdds, backCommission, forfeit) {
