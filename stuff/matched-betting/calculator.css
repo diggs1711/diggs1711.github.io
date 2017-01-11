@@ -1,0 +1,14 @@
+.calculator__table {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.calculator__table__input {
+	border-radius: 5px;
+}
+
+body {
+	font-family: ubuntu;
+}

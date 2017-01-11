@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+
+<body>
+    <div>
+        <div class="calculator">
+            <h1 class="calculator__header">Matched Betting Calculator</h1>
+            <p>Matched betting (also known as back or lay bet matching, or double betting) is a betting technique used by individuals to profit from the free bets and incentives offered by bookmakers. It is generally considered risk-free as it is based on the application of a mathematical equation rather than chance</p>
+            <p><a href="https://en.wikipedia.org/wiki/Matched_betting">Link</a></p>
+            <table class="calculator__table">
+                <tr>
+                    <td>
+                        <p>Stake
+                        </p>
+                    </td>
+                    <td>
+                        <input class="calculator__table__input" type="text" id="stake" name="" value="">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Back Odds
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <input class="calculator__table__input" type="text" id="back-odds" value="">
+                            <br>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Lay Odds
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <input class="calculator__table__input" type="text" id="lay-odds" name="" value="">
+                            <br>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Lay Commission
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <input class="calculator__table__input" type="text" id="lay-commission" name="" value="5">
+                            <br>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <button type="button" name="" class="calculator__table__button js-calcualte-btn">Calculate</button>
+                    </td>
+                </tr>
+            </table>
+            <div class="calculator__result">
+                <p class="lay-stake">Lay Stake is 50</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="calculator.js"></script>
+
+</html>
