@@ -1,5 +1,13 @@
 var canvas;
 var gl;
+var squareRotation = 0.0;
+var squareXOffset = 0.0;
+var squareYOffset = 0.0;
+var squareZOffset = 0.0;
+var lastSquareUpdateTime = 0;
+var xIncValue = 0.001;
+var yIncValue = -0.0001;
+var zIncValue = 0.1;
 
 function start() {
     canvas = document.getElementById("glcanvas");
@@ -17,7 +25,7 @@ function start() {
         initShaders();
         initBuffers();
 
-        setInterval(drawScene, 15)
+        setInterval(drawScene, 500)
     }
 }
 
@@ -119,11 +127,35 @@ function drawScene() {
     loadIdentity();
     mvTranslate([-0.0, 0.0, -6.0])
 
+    mvPushMatrix();
+    mvRotate(squareRotation, [1, 0, 1]);
+    mvTranslate([squareXOffset, squareYOffset, squareZOffset]);
+
     gl.bindBuffer(gl.ARRAY_BUFFER, squareVerticesBuffer)
 
     gl.vertexAttribPointer(vertextPositionAttribute, 3, gl.FLOAT, false, 0, 0);
     setMatrixUniforms();
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+
+    mvPopMatrix();
+
+    var currentTime = Date.now();
+    if (lastSquareUpdateTime) {
+        var delta = currentTime - lastSquareUpdateTime;
+
+        squareRotation += (10 * delta) / 100000.0;
+        squareXOffset += xIncValue * ((30 * delta) / 1000.0);
+        squareYOffset += yIncValue * ((30 * delta) / 1000.0);
+        squareZOffset += zIncValue * ((30 * delta) / 1000.0);
+
+        if (Math.abs(squareYOffset) > 50) {
+            xIncValue = -xIncValue;
+            yIncValue = -yIncValue;
+            zIncValue = -zIncValue;
+        }
+    }
+
+    lastSquareUpdateTime = currentTime/100;
 }
 
 function loadIdentity() {
@@ -148,4 +180,31 @@ function setMatrixUniforms() {
 
 window.onload = function() {
     start();
+}
+
+var mvMatrixStack = [];
+
+function mvPushMatrix(m) {
+    if (m) {
+        mvMatrixStack.push(m.dup());
+        mvMatrix = m.dup();
+    } else {
+        mvMatrixStack.push(mvMatrix.dup());
+    }
+}
+
+function mvPopMatrix() {
+    if (!mvMatrixStack.length) {
+        throw ("Can't pop from an empty matrix stack.");
+    }
+
+    mvMatrix = mvMatrixStack.pop();
+    return mvMatrix;
+}
+
+function mvRotate(angle, v) {
+    var inRadians = angle * Math.PI / 180.0;
+
+    var m = Matrix.Rotation(inRadians, $V([v[0], v[1], v[2]])).ensure4x4();
+    multMatrix(m);
 }
