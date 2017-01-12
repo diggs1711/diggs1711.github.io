@@ -1,12 +1,15 @@
-body{
-	font-family: ubuntu;
+body {
+    font-family: ubuntu;
 }
 
 .projects__item {
-	border-left: 2px solid #ccc;
-	padding: 5px;
+    border-left: 2px solid #ccc;
+    padding: 10px;
+    top: 50%;
+    height: 50%;
+    bottom: 0;
 }
 
 .projects {
-	margin-left: 10px;
+    margin-left: 10px;
 }
