@@ -3,11 +3,11 @@ body {
 }
 
 .projects__item {
-    border-left: 2px solid #ccc;
+    border: 2px solid #ccc;
+    border-top: none;
+    border-left: none;
     padding: 10px;
-    top: 50%;
-    height: 50%;
-    bottom: 0;
+    box-shadow: 2.5px 2.5px 2.25px #888888;
 }
 
 .projects {
