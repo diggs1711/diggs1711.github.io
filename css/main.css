@@ -35,6 +35,9 @@ h1 {
   background-color: #fff !important;
 }
 
+ul {
+  padding-left: 0px !important;
+}
 a {
   color: inherit;
   text-decoration: none;
