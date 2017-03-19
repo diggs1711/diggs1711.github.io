@@ -1,0 +1,32 @@
+h2 {
+    font-weight: normal;
+    font-size: 1.5rem !important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #aaa;
+    border: 1px solid #bbb;
+    border-right: none;
+    border-left: none;
+    margin: 0 0 18px;
+    padding: 6px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 24px 0 18px;
+}
+
+.jumbotron-heading {
+  font-size: 2.5rem !important;
+}
+
+.jumbotron {
+  padding-top: 6em;
+  padding-bottom: 6em;
+  margin-bottom: 0;
+  background-color: #fff !important;
+}
