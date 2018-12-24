@@ -82,3 +82,7 @@ SVG {
   flex-direction: column;
   z-index: 1000;
 }
+
+.bio {
+  padding-bottom: 0.5rem;
+}
