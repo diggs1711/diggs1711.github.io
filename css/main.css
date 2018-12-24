@@ -1,54 +1,84 @@
-h2 {
-    font-weight: normal;
-    font-size: 1.5rem !important;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #aaa;
-    border: 1px solid #bbb;
-    border-right: none;
-    border-left: none;
-    margin: 0 0 18px;
-    padding: 6px;
-    text-align: center;
-}
-
-ul li {
-  list-style: none;
-}
-
-i {
-  font-size:20px !important;
-  margin-right: 8px !important;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 24px 0 18px;
-}
-
-.jumbotron-heading {
-  font-size: 2.5rem !important;
-}
-
-.jumbotron {
-  padding-top: 6em;
-  padding-bottom: 6em;
-  margin-bottom: 0;
-  background-color: #fff !important;
-}
-
-ul {
-  padding-left: 0px !important;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid #ccc;
+* {
+  font-family: 'Gloria Hallelujah', cursive;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
 }
 
 body {
-  font-size: 10px !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+SVG {
+  z-index: 400;
+  height: 10rem;
+}
+
+@keyframes STAR-MOVE {
+  from {
+    background-position: 5% 5%
+  }
+
+  to {
+    background-position: 1300% 600%
+  }
+}
+
+.center {
+  z-index: 400;
+
+}
+
+.background {
+  background: black url(../images/background.png) repeat 55% 55%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+
+  -webkit-animation: STAR-MOVE 200s linear infinite;
+  -o-animation: STAR-MOVE 200s linear infinite;
+  animation: STAR-MOVE 200s linear infinite;
+}
+
+.midground {
+  background: url(../images/midground.png) repeat 20% 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  -webkit-animation: STAR-MOVE 200s linear infinite;
+  -o-animation: STAR-MOVE 200s linear infinite;
+  animation: STAR-MOVE 200s linear infinite;
+}
+
+.foreground {
+  background: url(../images/foreground.png) repeat 35% 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 300;
+
+  -webkit-animation: STAR-MOVE 200s linear infinite;
+  -o-animation: STAR-MOVE 200s linear infinite;
+  animation: STAR-MOVE 200s linear infinite;
+}
+
+.info__sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
 }
