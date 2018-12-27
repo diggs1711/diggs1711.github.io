@@ -4,22 +4,22 @@ import './../images/foreground.png';
 import './../src/main.css';
 
 var tl = new TimelineMax()
-tl.from("#titleText", 1.5, {
+tl.from("#titleText", 0, {
         scaleX: 0,
         transformOrigin: 'left',
         ease: Power2.easeOut
     })
-    .from('.bio', 0.5, {
+    .from('.bio', 0.3, {
         scaleX: 0,
         transformOrigin: "left",
         ease: Power2.easeOut
     })
-    .from('#stand', 0.5, {
+    .from('#stand', 0.3, {
         scaleY: 0,
         transformOrigin: "bottom",
         ease: Power2.easeOut
     })
-    .from('#standBack', 0.5, {
+    .from('#standBack', 0.3, {
         scaleY: 0,
         transformOrigin: "bottom",
         ease: Power2.easeOut

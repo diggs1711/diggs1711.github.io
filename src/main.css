@@ -2,17 +2,86 @@
   font-family: 'Gloria Hallelujah', cursive;
   margin: 0;
   padding: 0;
-  color: #fff;
-  font-size: 16px;
+  color: black;
 }
 
 body {
   width: 100%;
   height: 100%;
+}
+
+.header {
+  grid-column: 1 / span 3;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #0B3C49;
 }
+
+.c-footer-links__image {
+  height: 22px;
+  stroke: #fff;
+  stroke-width: 20;
+  fill: none;
+}
+
+.c-footer-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  color: #FFFDFD;
+}
+
+.c-footer-links__item {
+  margin: 5px;
+}
+
+h1 {
+  color: #FFFDFD;
+}
+
+.info-text {
+  color: black;
+}
+
+.main-content {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px 1fr 150px;
+}
+
+.footer {
+  grid-column: 1 / span 3;
+  background: #820263;
+  color: #FFFDFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  color: #FFFDFD;
+  text-align: center;
+}
+
+.info {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info:nth-child(even) {
+  background: #CBD2D0;
+}
+
+.info-1 {}
 
 SVG {
   z-index: 400;
@@ -34,6 +103,10 @@ SVG {
 
 }
 
+.background-image {
+  max-height: 500px;
+}
+
 .background {
   background: black url(../images/background.png) repeat 55% 55%;
   position: absolute;
@@ -42,6 +115,7 @@ SVG {
   right: 0;
   bottom: 0;
   z-index: 100;
+  height: 250px;
 
   -webkit-animation: STAR-MOVE 200s linear infinite;
   -o-animation: STAR-MOVE 200s linear infinite;
@@ -56,6 +130,8 @@ SVG {
   right: 0;
   bottom: 0;
   z-index: 200;
+  height: 250px;
+
   -webkit-animation: STAR-MOVE 200s linear infinite;
   -o-animation: STAR-MOVE 200s linear infinite;
   animation: STAR-MOVE 200s linear infinite;
@@ -69,7 +145,7 @@ SVG {
   right: 0;
   bottom: 0;
   z-index: 300;
-
+  height: 250px;
   -webkit-animation: STAR-MOVE 200s linear infinite;
   -o-animation: STAR-MOVE 200s linear infinite;
   animation: STAR-MOVE 200s linear infinite;
@@ -77,7 +153,6 @@ SVG {
 
 .info__sections {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   z-index: 1000;
