@@ -29,7 +29,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0B3C49;
+  color: #0B3C49;
+  /* background: #0B3C49; */
 }
 
 .c-footer-links__image {
@@ -52,7 +53,6 @@ body {
 }
 
 h1 {
-  color: #FFFDFD;
   font-size: 3.5rem;
 }
 
@@ -69,6 +69,7 @@ h1 {
 
 .footer {
   grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
   background: #820263;
   color: #FFFDFD;
   display: flex;
@@ -92,10 +93,8 @@ p {
 }
 
 .info:nth-child(even) {
-  background: #CBD2D0;
+  border: 1px solid #ccc;
 }
-
-.info-1 {}
 
 SVG {
   z-index: 400;
